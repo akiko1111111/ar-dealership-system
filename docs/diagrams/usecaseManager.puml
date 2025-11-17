@@ -1,0 +1,27 @@
+@startuml
+!theme plain
+
+left to right direction
+
+actor "Менеджер" as Manager
+
+rectangle "Система автосалона" {
+  usecase "Авторизация" as UC1
+  usecase "Просмотр списка бронирований" as UC2
+  usecase "Добавление автомобиля в систему" as UC3
+  usecase "Смена статуса автомобиля" as UC4
+  usecase "Оформление продажи автомобиля" as UC5
+  usecase "Отмена бронирования" as UC6
+}
+
+' Связи актора с use cases
+Manager --> UC1
+Manager --> UC2
+Manager --> UC3
+Manager --> UC4
+
+' Extend отношения
+UC2 <.. UC5 : <<extend>>
+UC2 <.. UC6 : <<extend>>
+
+@enduml

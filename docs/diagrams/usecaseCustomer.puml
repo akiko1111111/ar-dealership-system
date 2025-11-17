@@ -21,7 +21,7 @@ rectangle "Система автосалона" {
 Customer --> UC1
 Customer --> UC2
 Customer --> UC3
-Customer --> UC9
+Customer --> UC5
 
 ' Include отношения
 UC3 ..> UC4 : <<include>>
