@@ -57,14 +57,3 @@
 - Git
 - Usecase Diagrams
 
-## Запуск проекта
-
-### Предварительные требования
-- Python 3.8+
-- Git
-
-### Установка
-1. Клонируйте репозиторий:
-```bash
-git clone https://github.com/YOUR_USERNAME/car-dealership-system.git
-cd car-dealership-system
